@@ -1,5 +1,9 @@
 # MPA
 
+You can see every web page locally. </br>
+The main files are in the build folder.</br>
+
+# Components
 For this project I use:</br>
 
 Node modules:</br>
@@ -18,9 +22,6 @@ Bower components:
 -  matchHeight,</br>
 -  slickCarousel,</br>
 
-
-You can see every web page locally. </br>
-The main files are in the build folder.</br>
 
 # install gulp and bower components
 npm install -g bower </br>
