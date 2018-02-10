@@ -1,9 +1,4 @@
 # MPA
-//insall bower 
-npm install -g bower
-
-//install bower components
-bower install
-
-//instal node modules
-npm install --save-dev
+npm install -g bower </br>
+bower install</br>
+npm install --save-dev</br>
