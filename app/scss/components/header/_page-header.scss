@@ -1,0 +1,42 @@
+.page-header-c {
+  background-color: $color-ffffff;
+  padding: 15px 0;
+  position: relative;
+
+  @include bp-max-767 {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand-c {
+  display: inline-block;
+
+  img {
+    @extend .img-crisp;
+    @include bp-min-1200 {
+      width: 207px;
+    }
+    @include bp-max-1199 {
+      width: 250px;
+    }
+    @include bp-max-767 {
+      width: 175px;
+      margin-top: 8px;
+    }
+  }
+  .logo-desktop {
+    @include bp-max-1199 {
+      display: none;
+    }
+  }
+  .logo-mobile {
+    @include bp-min-1200 {
+      display: none;
+    }
+  }
+}

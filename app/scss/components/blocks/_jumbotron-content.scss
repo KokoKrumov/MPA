@@ -1,0 +1,7 @@
+.jumbotron-content {
+  max-width: 400px;
+
+  @include bp-max-767 {
+    margin: 40px 0;
+  }
+}

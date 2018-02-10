@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Colors
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$primary-color:         #3d3838;
+$secondary-color:       #be1e2d;
+$primary-border-color:  #ececec;
+
+
+
+$black:                 #373737;
+$white:                 #fff;
+
+$grey:                  #9d9d9d;
+$blue:                  #5cb8e6;
+
+$red:                   #ff4600;
+
+
+/* Specifics
+   ========================================================================== */
+$text-color:            $black;
+$hr-color:              $grey;
+$link-color:            $blue;
+$link-color--hover:     darken($link-color, 15%);
+
+$theme-color:           $grey;
+$theme-color--dark:     $grey;
+
+
+$color-363636:            #363636;
+$color-252525:            #252525;
+$color-acacac:            #acacac;
+$color-ffffff:            #ffffff;
+$color-b78c1f:            #b78c1f;
+$color-000000:            #000000;
+$color-bcbcbc:            #bcbcbc;
+$color-555555:            #555555;
+$color-363636:            #363636;
+$color-4b4f54:            #4b4f54;
+$color-efefef:            #efefef;
+$color-3b9cd6:            #3b9cd6;
+$color-40b649:            #40b649;
+$color-3b5a9a:            #3b5a9a;
+$color-3b3b3b:            #3b3b3b;
+$color-858686:            #858686;
+$color-464646:            #464646;
+$color-b7b7b7:            #b7b7b7;
+$color-ebebeb:            #ebebeb;
+$color-555555:            #555555;
+$color-354952:            #354952;
+$color-be1622:            #be1622;
+$color-d6b86f:            #d6b86f;
+$color-a7a7a7:            #a7a7a7;
+$color-6e6e6d:            #6e6e6d;
+$color-f6f6f6:            #f6f6f6;
+$color-3f4142:            #3f4142;
+$color-fcf5f5:            #fcf5f5;

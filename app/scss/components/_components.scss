@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Components
+
+   Never add styles directly to this file - set up imports
+   ========================================================================== */
+
+
+/* Blocks
+   ========================================================================== */
+@import "blocks/container",
+        "blocks/jumbotron-content",
+        "blocks/icon-thumb--horizontal",
+        "blocks/box-item",
+        "blocks/form",
+        "blocks/thumb-boxes",
+        "blocks/pagination",
+        "blocks/caption",
+        "blocks/contact-form",
+        "blocks/carousel-project";
+
+
+/* Structures
+   ========================================================================== */
+
+//@import "structures/cookie-consent";
+
+
+
+/* Header
+   ========================================================================== */
+@import "header/page-header";
+
+
+/* Footer
+   ========================================================================== */
+@import "footer/footer";
+
+
+/* Forms
+   ========================================================================== */
+//@import "forms/contact-form";
+
+
+/* Pageparts
+   ========================================================================== */
+@import "pageparts/backgrounds",
+        "pageparts/label-text",
+        "pageparts/navigation",
+        "pageparts/main-navigation",
+        "pageparts/secondary-navigation",
+        "pageparts/hr",
+        "pageparts/detail-page-project",
+        "pageparts/lists",
+        "pageparts/titles";
+
+/* Vendors
+   ========================================================================== */
+
+@import "../../../bower_components/slick-carousel/slick/slick.scss";

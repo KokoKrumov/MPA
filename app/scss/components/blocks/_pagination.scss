@@ -1,0 +1,141 @@
+.pagination {
+  @extend .flex;
+  @include bp-max-767 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .pagination-text {
+    color: $color-3f4142;
+    padding: 8px 12px;
+    font-family: $primary-font-bold;
+    @include font-size(24px);
+    display: inline-block;
+
+    @include bp-max-425 {
+      padding: 9px 12px;
+      @include font-size(18px);
+    }
+  }
+
+  .page-number {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    color: $color-3f4142;
+    font-family: $primary-font-bold;
+    border: 1px solid $legend-border-color;
+    color: $color-3f4142;
+    outline: none;
+    @include font-size(24px);
+
+    &:focus {
+      border: 1px solid $secondary-color;
+    }
+
+    @include bp-max-425 {
+      width: 36px;
+      height: 36px;
+      @include font-size(18px);
+    }
+  }
+
+  .prev,
+  .next {
+    border: 3px solid $secondary-color;
+    padding: 8px 20px;
+    @extend .hover-effects;
+    @include font-size(14px);
+
+    @include bp-max-425 {
+      @include font-size(12px);
+      padding: 8px 12px;
+    }
+
+    i {
+      @include font-size(20px);
+      vertical-align: text-bottom;
+
+      @include bp-max-425 {
+        @include font-size(14px);
+        vertical-align: top;
+      }
+    }
+
+    &:hover:before {
+      @extend .sweep-to-right-hover-before;
+    }
+
+    &:hover {
+      color: $color-ffffff;
+    }
+
+    &:before {
+      background-color: $secondary-color;
+      border-color: $color-000000;
+    }
+  }
+
+  .prev {
+    margin-right: 12px;
+
+    @include bp-max-425 {
+      margin-right: 4px;
+    }
+
+    &:hover:before {
+      @extend .sweep-to-left-hover-before;
+    }
+
+    &:before {
+      @extend .sweep-to-left;
+    }
+
+    i {
+      padding-right: 10px;
+    }
+  }
+
+  .next {
+    margin-left: 12px;
+
+    @include bp-max-425 {
+      margin-left: 4px;
+    }
+
+    &:hover:before {
+      @extend .sweep-to-right-hover-before;
+    }
+
+    &:before {
+      @extend .sweep-to-right;
+    }
+
+    i {
+      padding-left: 10px;
+    }
+  }
+
+  .prev.disabled, .next.disabled {
+    opacity: 0.3;
+
+    &:before {
+      content: none;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+
+  .pagination-text--from {
+    padding: 14px 0 0 12px;
+    @include font-size(18px);
+
+    @include bp-max-425 {
+      padding: 9px 0 0 8px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../config/general/mixins";
+
+.bg-color-25 {
+  @include bg-($color-252525);
+
+}
+
+.bg-color-00 {
+  @include bg-($color-000000);
+}
+
+.bg-color-55 {
+  @include bg-($color-555555);
+}
+
+.bg-color-ef {
+  @include bg-($color-efefef);
+}
+
+.color-4b {
+  color: $color-4b4f54;
+}
+
+.color-ac {
+  color: $color-acacac;
+}
+
+.color-ff {
+  color: $color-ffffff;
+}
+
+.color-b7, .color-primary {
+  color: $color-b78c1f;
+}
+
+.color-00 {
+  color: $color-000000;
+}

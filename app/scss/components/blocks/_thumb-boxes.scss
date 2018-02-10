@@ -1,0 +1,79 @@
+.wrap_thumb-icon-box {
+  background-image: url("../images/services/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $primary-border-color;
+}
+
+.wrap_thumb-icon-link {
+  padding: 35px 0;
+  width: 100%;
+  height: 100%;
+  &:hover{
+    background-color: $primary-color;
+    .thumb_services-title {
+      color: $color-ffffff;
+    }
+  }
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.thumb_services-icon {
+  display: block;
+  color: $secondary-color;
+  font-size: 65px;
+  text-align: center;
+}
+
+.thumb_services-title {
+  @include font-size(18px);
+  font-family: $primary-font-bold;
+  color: $primary-color;
+  margin: 15px auto 0;
+  max-width: 180px;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+  word-wrap: break-word;
+  @media (max-width: 991px) {
+    @include font-size(16px);
+  }
+}
+
+.thumb_setvices-detail-icon {
+  margin: 100px 30px;
+  @extend .thumb_services-icon;
+  @include font-size(270px);
+  color: $color-fcf5f5;
+
+  @media (max-width: 1235px) {
+    margin: 100px 20px;
+    @include font-size(230px);
+  }
+
+  @media (max-width: 1135px) {
+    margin: 100px 20px;
+    @include font-size(200px);
+  }
+
+}
+
+.match-height-box {
+
+}
+

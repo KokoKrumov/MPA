@@ -1,0 +1,94 @@
+.wrap__nav-primary {
+  .navbar-toggle:not(.collapsed) .icon-bar {
+    i:before {
+      font-family: 'mp_architects';
+      content: "\e90a";
+      color: $color-ffffff;
+    }
+  }
+
+  .navbar-collapse {
+    @include bp-max-1199 {
+      background-color: rgba(62, 64, 65, 0.95);
+      width: 100vw;
+      height: 100vh;
+      min-width: 150px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 9999;
+      border-top: none;
+    }
+  }
+
+  .header_navigation {
+    height: 100%;
+    @extend .align-items-center;
+
+    @include bp-max-1199 {
+      justify-content: center;
+      height: 100vh;
+    }
+
+    &-link {
+      @include bp-max-1199 {
+        @include font-size(22px);
+        @include bp-min-768 {
+          font-size: calc(22px + (35 - 22) * (100vw - 768px) / (1920 - 768));
+        }
+      }
+    }
+
+    .active {
+      color: $secondary-color;
+    }
+  }
+
+  .header-social {
+    @include bp-max-1199 {
+      width: 200px;
+      margin-top: 50px;
+      text-align: center;
+
+      i {
+        color: $color-ffffff;
+        @include font-size(30px);
+
+        &:hover {
+          color: $color-be1622;
+        }
+      }
+    }
+  }
+}
+
+.header_navbar-wrap .menu-settings {
+  position: relative;
+
+  .dropdown {
+    position: absolute;
+    right: 70%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    display: block;
+
+    @include bp-min-1200 {
+      display: none;
+    }
+
+    &-toggle-c {
+      color: $secondary-color;
+      @include font-size(16px);
+      padding: 15px;
+
+      @include bp-min-768 {
+        font-size: calc(16px + (20 - 16) * (100vw - 768px) / (1920 - 768));
+      }
+
+      &:hover {
+        color: $color-000000;
+      }
+    }
+  }
+}

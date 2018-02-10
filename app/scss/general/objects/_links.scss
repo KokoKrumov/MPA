@@ -1,0 +1,52 @@
+.header_navigation-link {
+  @include font-size(16px);
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 15px;
+
+  @include bp-min-768 {
+    font-size: calc( 16px + (18 - 16) * (100vw - 768px) / (1920 - 768) );
+  }
+
+  &:hover, &:active, &:focus {
+    color: $secondary-color;
+    outline: none;
+  }
+}
+
+.jumbotron-link-more {
+  color: $color-ffffff;
+  @include font-size(18px);
+  @extend .hover-effects;
+  line-height: 30px;
+
+  &:hover, &:active, &:focus {
+    color: $color-ffffff;
+    &:before {
+      @extend .underline-from-left-hover-before;
+    }
+  }
+
+  &:before {
+    @extend .underline-from-left;
+    background: $secondary-color;;
+  }
+}
+
+.nav-secondary_link {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  @include font-size(14px);
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &:hover, &:active, &:focus {
+    color: $secondary-color;
+  }
+
+  &.active {
+    font-family: $primary-font-bold;
+  }
+}

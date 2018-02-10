@@ -1,0 +1,115 @@
+.tab-description {
+  @extend .flex;
+  margin-bottom: 30px;
+
+  @include bp-max-991 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    width: 265px;
+
+    @include bp-max-991 {
+      margin-bottom: 30px;
+      width: 145px;
+    }
+
+    .icon-text, .icon-text__desc {
+      text-transform: none;
+    }
+  }
+}
+
+.wrap-thumb__prev-next {
+  .background-image-wrapper {
+    @extend .flex;
+
+    @include bp-max-767 {
+      display: block;
+    }
+  }
+
+  .background-image-list {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .icon-thumb--horizontal {
+    >img {
+      width: 90px;
+      height: 90px;
+    }
+
+    >div {
+      width: 165px;
+
+      @include bp-max-767 {
+        width: auto;
+      }
+    }
+  }
+
+  .thumb-next .icon-thumb--horizontal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    text-align: right;
+
+    >div {
+      margin-right: 10px;
+
+      @include bp-max-767 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .icon-text__desc {
+    margin-top: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @extend .hover-effects;
+    line-height: 30px;
+
+    @include bp-max-767 {
+      margin: 10px 0;
+    }
+  }
+
+  .icon-text {
+    text-transform: none;
+  }
+
+  .thumb-next {
+    a.icon-text__desc {
+      &:hover, &:active, &:focus {
+        &:before {
+          @extend .underline-from-left-hover-before;
+        }
+      }
+
+      &:before {
+        @extend .underline-from-left;
+        background: $secondary-color;;
+      }
+    }
+  }
+
+  .thumb-prev {
+    a.icon-text__desc {
+      &:hover, &:active, &:focus {
+        &:before {
+          @extend .underline-from-right-hover-before;
+        }
+      }
+
+      &:before {
+        @extend .underline-from-right;
+        background: $secondary-color;;
+      }
+    }
+  }
+}

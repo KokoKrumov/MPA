@@ -1,0 +1,63 @@
+.icon-thumb--horizontal {
+  @extend .flex;
+  @extend .align-items-center;
+  @extend .flex-direction-row;
+
+  @include bp-max-767 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+.icon-text {
+  font-family: $primary-font-bold;
+  @extend .flex;
+  @extend .flex-direction-column;
+  @extend .justify-content-center;
+  margin-left: 10px;
+  color: $color-3f4142;
+
+  @include bp-min-768 {
+    font-size: calc( 16px + (18 - 16) * (100vw - 768px) / (1920 - 768) );
+  }
+
+  @include bp-max-767 {
+    margin-left: 0;
+  }
+}
+
+.icon-text__desc {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  font-family: $primary-font;
+  @extend .text-uppercase;
+  color: $color-3f4142;
+
+  &:hover {
+    color: $color-3f4142;
+  }
+
+  @include bp-max-767 {
+    margin-left: 0;
+  }
+
+  &--time {
+    @include font-size(14px);
+  }
+}
+
+.icon-title {
+  @extend .icon-text;
+  margin-top: 20px;
+
+  @include bp-max-767 {
+    margin-top: 18px;
+  }
+}
+
+a.icon-title:hover {
+  color: $secondary-color;
+}

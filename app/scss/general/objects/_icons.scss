@@ -1,0 +1,24 @@
+.icon-thumb {
+  @extend .flex;
+  @extend .justify-content-around;
+}
+
+.icon-thumb__icon {
+  i {
+    color: $color-3f4142;
+    &:hover {
+      color: $color-be1622;
+    }
+    &:hover:before, &:focus:before, &:active:before {
+      @extend .icon-pulse;
+    }
+  }
+}
+
+.header-social i {
+  @include font-size(20px);
+}
+
+.footer-social i {
+  @include font-size(30px);
+}

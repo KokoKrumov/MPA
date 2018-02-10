@@ -1,0 +1,16 @@
+.dropdown-toggle-c {
+  @extend .header_navigation-link;
+  border: none;
+  background: none;
+  font-family: $primary-font-bold;
+  color: $secondary-color;
+
+  &:hover {
+    color: $color-000000;
+  }
+}
+
+.dropdown-menu-c {
+  right: 0;
+  min-width: 60px;
+}

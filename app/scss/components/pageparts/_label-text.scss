@@ -1,0 +1,19 @@
+.label-text {
+  display: inline-block;
+  padding: 15px;
+  font-family: $primary-font-bold;
+  @include font-size(20px);
+  background-color: $secondary-color;
+  color: $color-ffffff;
+  text-transform: uppercase;
+
+  @include bp-max-767 {
+    padding: 10px 10px 8px;
+    @include font-size(16px);
+  }
+}
+
+.center-text {
+  font-family: $primary-font;
+  @include font-size(16px);
+}

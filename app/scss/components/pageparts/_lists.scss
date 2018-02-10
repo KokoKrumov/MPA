@@ -1,0 +1,23 @@
+.detail-list {
+  margin: 35px 0 35px 40px;
+
+  .detail-list-item {
+    padding: 3px 0;
+    text-transform: none;
+    font-family: $primary-font-content;
+    @extend .flex;
+    @extend .flex-direction-row;
+
+    .detail-list-txt {
+      max-width: 650px;
+      margin: 3px 10px;
+      padding-top: 3px;
+      line-height: normal;
+    }
+  }
+  .detail-list-item::before {
+    content: "• ";
+    color: $secondary-color;
+    @include font-size(30px);
+  }
+}

@@ -1,0 +1,74 @@
+.title-primary {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $primary-font-bold;
+  @include font-size(28px);
+  color:  $primary-color;
+
+  @include bp-min-768 {
+    font-size: calc( 28px + (44 - 28) * (100vw - 768px) / (1920 - 768) );
+  }
+}
+
+.subtitle-primary {
+  @include font-size(14px);
+  font-family: $primary-font;
+  padding-top: 10px;
+
+  @include bp-min-768 {
+    font-size: calc(14px + (16 - 14) * (100vw - 768px) / (1920 - 768) );
+  }
+}
+
+.detail-title {
+  @include font-size(30px);
+  font-family: $primary-font-bold;
+  padding: 25px 0;
+
+   @media (max-width: 991px) {
+     @include font-size(26px);
+   }
+}
+
+.jumbotron-title {
+  @extend .title-primary;
+  color: $color-ffffff;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  &__link {
+    color: $color-ffffff;
+    &:hover,
+    &:focus {
+      color: #df283a;
+    }
+  }
+}
+
+.chronology-title {
+  border-bottom: 4px solid $secondary-color;
+  font-family: $primary-font-bold;
+  @include font-size(16px);
+
+  @include bp-min-768 {
+    font-size: calc(16px + (20 - 16) * (100vw - 768px) / (1920 - 768) );
+  }
+
+  &__date {
+    display: inline-block;
+    background-color: $secondary-color;
+    color: $color-ffffff;
+    padding: 12px 25px;
+  }
+}
+
+.center-title {
+  font-family: $primary-font-bold;
+  @include font-size(25px);
+  padding-top: 20px;
+
+  @include bp-min-768 {
+    font-size: calc(25px + (44 - 25) * (100vw - 768px) / (1920 - 768) );
+  }
+}

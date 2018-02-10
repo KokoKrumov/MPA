@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  @include font-size(14px);
+  font-family: $primary-font-bold;
+  border: 1px solid;
+  padding: 5px 30px;
+  position: relative;
+  border-radius: 50px;
+
+  @include bp-min-768 {
+    font-size: calc( 14px + (18 - 14) * (100vw - 768px) / (1920 - 768) );
+  }
+
+  &:focus, .focus, &:active:focus, &:active.focus, .active:focus, .active.focus {
+    outline: none;
+  }
+}
+
+.btn-default,
+.btn-default.active,
+.btn-default:active {
+  color: $color-000000;
+  background-color: $color-ffffff;
+  border-color: $secondary-color;
+  @extend .hover-effects;
+
+  &:hover,
+  &.focus,
+  &:focus {
+    color: $color-ffffff;
+    background-color: $color-ffffff;
+
+    &:before {
+      @extend .sweep-to-right-hover-before;
+    }
+  }
+
+  &:before {
+    @extend .sweep-to-right;
+    background-color: $secondary-color;
+    border-color: $color-000000;
+    border-radius: 50px;
+  }
+}

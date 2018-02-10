@@ -1,0 +1,125 @@
+.wrap-carousel {
+  margin-top: 10px;
+
+  .slick-dots {
+    width: auto;
+    bottom: -36px;
+
+    @include bp-max-666 {
+      display: none !important;
+    }
+
+    li button {
+      color: $color-000000;
+      @include font-size(16px);
+
+      &:before {
+        content:  none;
+      }
+    }
+
+    li:nth-child(-n+9) button:before {
+      content:  '0';
+      font-size: 16px;
+      left: -8px;
+      opacity: 1;
+      font-family: $primary-font;
+    }
+
+    li.slick-active:nth-child(-n+9) button:before {
+      font-family: $primary-font-bold;
+    }
+
+    .slick-active {
+      font-family: $primary-font-bold;
+    }
+  }
+
+
+  .slick-prev, .slick-next {
+    top: auto;
+    text-transform: uppercase;
+    @include font-size(14px);
+    color: $color-000000;
+    bottom: -43px;
+    width: auto;
+    font-family: $primary-font-bold;
+    color: $primary-color;
+  }
+
+  .slick-next:before {
+    content: none;
+  }
+
+  .slick-next:after {
+    content: '→';
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .slick-prev:before, .slick-next:after {
+    color: $color-000000;
+    font-family: "Oswald-ExtraLight", Helvetica, Arial, sans-serif;
+    opacity: 1;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 95px;
+
+    @include bp-max-666 {
+      left: 20%;
+    }
+
+    &:hover ,
+    &:focus {
+      font-family: $primary-font-bold;
+      color: $primary-color;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    @include bp-max-666 {
+      right: 26%;
+    }
+
+    &:hover ,
+    &:focus {
+      font-family: $primary-font-bold;
+      color: $primary-color;
+    }
+  }
+
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    font-family: $primary-font;
+  }
+
+
+  .slick-prev:hover.slick-disabled,
+  .slick-prev:focus.slick-disabled,
+  .slick-next:hover.slick-disabled,
+  .slick-next:focus.slick-disabled {
+    font-family: $primary-font;
+  }
+
+  .slick-line {
+    line-height: 0;
+    position: absolute;
+    top: auto;
+    bottom: -27px;
+    right: 70px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: $color-b7b7b7;
+    @include font-size(14px);
+
+    @include bp-max-666 {
+      right: 52%;
+    }
+  }
+}

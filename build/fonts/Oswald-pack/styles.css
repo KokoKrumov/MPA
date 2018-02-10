@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url('Oswald-Bold.eot?#iefix') format('embedded-opentype'),  url('Oswald-Bold.woff') format('woff'), url('Oswald-Bold.ttf')  format('truetype'), url('Oswald-Bold.svg#Oswald-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Oswald-ExtraLight';
+  src: url('Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),  url('Oswald-ExtraLight.woff') format('woff'), url('Oswald-ExtraLight.ttf')  format('truetype'), url('Oswald-ExtraLight.svg#Oswald-ExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
